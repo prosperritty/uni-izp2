@@ -36,7 +36,7 @@ Where _ROW_ and _COLUMN_ is the point of entry.
 - `--test` Will validate the maze from input file
 - `--rpath` Will find a way out of the maze with the right-hand rule
 - `--lpath` Will find a way out of the maze with the left-hand rule
-- `Some file` That contains the maze
+- `Some file` That contains maze
 
 # Maze
 
@@ -44,7 +44,7 @@ Where _ROW_ and _COLUMN_ is the point of entry.
 ![Maze file structure](https://github.com/prosperritty/uni-izp2/blob/main/img/maze.png)
 *This maze is in example.txt*
 
-First two digits in file define the size of maze by:
+First two digits in file define the size of maze:
 ```
 ROW COLUMN
 value value value
@@ -54,7 +54,7 @@ value value value
 ### Value of cell
 ![Value of cell](https://github.com/prosperritty/uni-izp2/blob/main/img/cell.png)
 
-Value of cell is 3 bit and if value of bit is 1, that means there is border:
+Value of cell is 3 bit and if value of bit is 1, there is a border:
 - First bit defines left border
 - Second bit defines rigth border
 - Third bit defines upper/bottom border<br>
@@ -73,7 +73,7 @@ Value of cell is 3 bit and if value of bit is 1, that means there is border:
   then allocate `*cells` and the structure itself.<br>
   - `rows` is number of rows.
   - `cols` is number of columns.
-  - `*cells` is array that contains values of cells and have size of `rows * cols`
+  - `*cells` is array that contains values of cells and has size of `rows * cols`
 - A function that decides whether a certain cell has a border or not. *(see [value of cell](#value-of-cell))*
   ```c
   bool isborder(Map *map, int r, int c, int border);
